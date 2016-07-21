@@ -5,6 +5,8 @@
 module:testrunner
 
 GET     /                                       App.Index
+GET     /beers                                  Beers.List
+GET     /beers/:beerID                          Beers.Show
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
